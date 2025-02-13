@@ -9,7 +9,7 @@
 </div>
 
 ## Introduction
-**HumanOmni** is the industry's first human-centric omnimultimodal large language model designed to achieve comprehensive understanding in human-centric scenes through joint visual-audio-linguistic reasoning. Unlike generic multimodal models, we address two key challenges: 
+**HumanOmni** is the industry's first human-centric omnimultimodal large language model designed to achieve comprehensive understanding in human-centric scenes.
 1) **Domain-specific capability**: Trained on 2.4M human-centric video clips with 14M instructions
 2) **Adaptive fusion**: Features three specialized branches with instruction-guided dynamic fusion
 3) **Audio-visual synergy**: Integrates environmental audio cues with visual understanding
