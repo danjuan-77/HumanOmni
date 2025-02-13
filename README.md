@@ -9,26 +9,18 @@
 </div>
 
 ## Introduction
-**HumanOmni** is the first unified framework for comprehensive understanding of human-centric scenes through multimodal fusion. Our solution addresses three core challenges:
-
-🎯 **Key Innovations**:
-- **Adaptive Fusion Mechanism**: Dynamic integration of visual, auditory and textual features
-- **Temporal Synchronization**: Frame-accurate alignment of video and audio streams
-- **Domain-Specific Pretraining**: Curriculum learning on 2.4M human-centric clips
-
-💡 **Core Features**:
-- 7B parameter base model with 3 modality-specific encoders
-- 14.7 FPS real-time processing at 1080p resolution
-- Support for 18+ human understanding tasks
+**HumanOmni** is the industry's first human-centric omnimultimodal large language model designed to achieve comprehensive understanding in human-centric scenes through joint visual-audio-linguistic reasoning. Unlike generic multimodal models, we address two key challenges: 
+1) **Domain-specific capability**: Trained on 2.4M human-centric video clips with 14M instructions
+2) **Adaptive fusion**: Features three specialized branches with instruction-guided dynamic fusion
+3) **Audio-visual synergy**: Integrates environmental audio cues with visual understanding
 
 ## Model Versions
 ### Released Models
-| Version    | Parameters | Modalities       | VRAM Requirement |
-|------------|------------|------------------|------------------|
-| 7B-Base    | 7B         | Video+Audio+Text | 24GB             |
+| Version    | Parameters | Modalities       | 
+|------------|------------|------------------|
+| 7B-Base-Instruct    | 7B         | Video+Audio+Text | 
 
 ### Upcoming Releases
-```diff
 + 2B-Lite (Q3 2024): Pruned version for edge devices (2B params, 8GB VRAM)
 + 72B-Expert (Q4 2024): Enhanced reasoning model with RLHF tuning
 
@@ -39,3 +31,8 @@ Here are some performance benchmarks of HumanOmni across various tasks:
   <img src="figures/performance_task1.png" width="400"/>
   <img src="figures/performance_task2.png" width="400"/>
 </div>
+
+## Environment Setup
+conda create -n humanomni python=3.10
+conda activate humanomni
+pip install -r requirements.txt
