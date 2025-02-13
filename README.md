@@ -21,8 +21,8 @@
 | 7B-Base-Instruct    | 7B         | Video+Audio+Text | 
 
 ### Upcoming Releases
-+ 2B-Lite (Q3 2024): Pruned version for edge devices (2B params, 8GB VRAM)
-+ 72B-Expert (Q4 2024): Enhanced reasoning model with RLHF tuning
++ 2B-Lite 
++ 72B-Expert 
 
 ## Performance
 Here are some performance benchmarks of HumanOmni across various tasks:
