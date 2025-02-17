@@ -28,9 +28,9 @@
 Here are some performance benchmarks of HumanOmni across various tasks:
 
 <div align="center">
-  <img src="figures/result_omotion.png" width="400"/>
-  <img src="figures/result_dfec.png" width="400"/>
-  <img src="figures/result_mvbench.png" width="400"/>
+  <img src="figures/result-omotion.png" width="400"/>
+  <img src="figures/result-dfec.png" width="400"/>
+  <img src="figures/result-mvbench.png" width="400"/>
 </div>
 
 ## Environment Setup
