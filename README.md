@@ -108,7 +108,7 @@
 
 
 ### English Chat
-https://humanmllm.github.io/HumanOmni/english_video.mp4
+[https://humanmllm.github.io/HumanOmni/english_video.mp4](https://github.com/user-attachments/assets/35bea4cb-9fee-4c42-b05e-708a2ee260f4)
 
 ## Environment Setup
 
