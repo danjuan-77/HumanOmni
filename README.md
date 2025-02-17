@@ -109,6 +109,14 @@
 
 ### English Chat
 [https://humanmllm.github.io/HumanOmni/english_video.mp4](https://github.com/user-attachments/assets/35bea4cb-9fee-4c42-b05e-708a2ee260f4)
+```
+User: What's the major expression of the woman in the video?
+HumanOmni:The major expression of the woman in the video is frown.
+User:What did the woman say?
+HumanOmni:The woman says "Dogs are sitting by the door".
+User:Describe the woman in the video.
+HumanOmni:The woman in the video has brown hair tied back, a black top, and a small mole on her cheek.
+```
 
 ## Environment Setup
 
@@ -138,7 +146,7 @@ An example json file of the training data:
 ```
 [
     {
-        "video": "/mnt/data/qize.yqz/datasets/human/DFEW/videos/1.mp4",
+        "video": "human/DFEW/videos/1.mp4",
         "conversations": [
             {
                 "from": "human",
@@ -149,10 +157,9 @@ An example json file of the training data:
                 "value": "sad"
             }
         ],
-        "clip_meta_path": "/mnt/data/qize.yqz/datasets/human/DFEW/body_face/1.json"
     },
     {
-        "video": "/mnt/data/qize.yqz/datasets/human/DFEW/videos/1.mp4",
+        "video": "human/DFEW/videos/1.mp4",
         "conversations": [
             {
                 "from": "human",
@@ -163,7 +170,6 @@ An example json file of the training data:
                 "value": "sad"
             }
         ],
-        "clip_meta_path": "/mnt/data/qize.yqz/datasets/human/DFEW/body_face/1.json"
     },
   ...
 ]
