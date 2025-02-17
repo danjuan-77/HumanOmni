@@ -104,29 +104,13 @@ Action and Pose Understanding:
 | **HumanOmni**                    | 70.0| 78.0| 92.5| 80.5| 65.5| 49.0| **72.6** |
 
 ## Demo
-### Chinese Video Example (`chinese_video.mp4`)
+## 📺 视频演示
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <div style="width: 48%;">
-    <video width="100%" controls>
-      <source src="demos/chinese_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div style="width: 48%; background-color: #f9f9f9; padding: 15px; border-radius: 8px;">
-    <strong>Questions and Answers:</strong>
-    <ol style="list-style-type: decimal;">
-      <li><strong>描述一下视频中男子的外貌穿着。</strong>
-        <p><em>HumanOmni:</em> 视频中的男性有短的黑发，配戴圆框眼镜。他穿了一件棕色的毛衣，内里是白色的。</p>
-      </li>
-      <li><strong>视频中男子说了什么内容？</strong>
-        <p><em>HumanOmni:</em> 男子说他穿什么颜色的衣服，现在处于什么环境，今天的天气怎么样。</p>
-      </li>
-    </ol>
-  </div>
-</div>
+### 中文演示
+<video src="https://humanmllm.github.io/HumanOmni/docs/chinese_video.mp4" controls width="100%"></video>
 
----
+### English Demo
+<video src="https://humanmllm.github.io/HumanOmni/docs/chinese_video.mp4" controls width="100%"></video>
 
 ## Environment Setup
 
