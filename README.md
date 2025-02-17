@@ -5,7 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2405.15111-red)](https://arxiv.org/abs/2501.15111)
 
 <div align="center">
-  <img src="figures/pipeline.png" width="800"/>
+  <img src="figures/arch.png" width="800"/>
 </div>
 
 ## Introduction
@@ -28,8 +28,9 @@
 Here are some performance benchmarks of HumanOmni across various tasks:
 
 <div align="center">
-  <img src="figures/performance_task1.png" width="400"/>
-  <img src="figures/performance_task2.png" width="400"/>
+  <img src="figures/result_omotion.png" width="400"/>
+  <img src="figures/result_dfec.png" width="400"/>
+  <img src="figures/result_mvbench.png" width="400"/>
 </div>
 
 ## Environment Setup
