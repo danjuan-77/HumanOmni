@@ -15,9 +15,6 @@
 3) **Audio-visual synergy**: Integrates environmental audio cues with visual understanding
    
 ## Model Downloads
-
-### DeepSeek-R1 Models
-
 <div align="center">
 
 | **Model** | **#Total Params** | **Download** |
