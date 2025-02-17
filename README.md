@@ -31,7 +31,7 @@
 
 ## Performance
 
-Emotion Understanding:
+- Emotion Understanding:
 
 | Method                          | Modalities | DFEW (UAR) | DFEW (WAR) | MAFW (UAR) | MAFW (WAR) |
 |----------------------------------|------------|-------------|-------------|-------------|-------------|
@@ -51,7 +51,7 @@ Emotion Understanding:
 | GPT4-O                       | AV         | 50.57       | 57.19       | 38.29       | 48.82       |
 | **HumanOmni**                    | AV         | **74.86**   | **82.46**   | **52.94**   | **68.40**   |
 
-Dynamic Facial Expression Caption:
+- Dynamic Facial Expression Caption:
 
 | Method                          | Correctness | Detail | Context | Temporal | CIDEr  | Rouge-L | AutoDQ  |
 |----------------------------------|-------------|--------|---------|----------|--------|---------|---------|
@@ -79,7 +79,7 @@ Dynamic Facial Expression Caption:
 | InternLM-XComposer-2.5-OL    | 3.91        | 3.70   | 4.12    | 3.54     | 0.113  | 0.164   | 0.382   |
 | **HumanOmni**                    | **4.58**    | **4.41**| **4.70**| **4.41** | 0.412  | 0.468   | **0.523**|
 
-Action and Pose Understanding:
+- Action and Pose Understanding:
 
 | Method                          | Action Sequence  | Unexpected Action  | Action Antonym  | Object Interaction  | Action Count  | Fine-grained Action  | Avg  |
 |----------------------------------|-----|-----|-----|-----|-----|-----|------|
