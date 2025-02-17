@@ -13,12 +13,21 @@
 1) **Domain-specific capability**: Trained on 2.4M human-centric video clips with 14M instructions
 2) **Adaptive fusion**: Features three specialized branches with instruction-guided dynamic fusion
 3) **Audio-visual synergy**: Integrates environmental audio cues with visual understanding
+   
+## Model Downloads
 
-## Model Versions
-### Released Models
-| Version    | Parameters | Modalities       | 
-|------------|------------|------------------|
-| 7B-Base-Instruct    | 7B         | Video+Audio+Text | 
+### DeepSeek-R1 Models
+
+<div align="center">
+
+| **Model** | **#Total Params** | **Download** |
+| :------------: | :------------: | :------------: |
+| Human | 7B | [🤗 HuggingFace](https://huggingface.co/StarJiaxing/HumanOmni-7B)   |
+
+</div>
+
+DeepSeek-R1-Zero & DeepSeek-R1 are trained based on DeepSeek-V3-Base. 
+For more details regarding the model architecture, please refer to [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) repository.
 
 ### Upcoming Releases
 + 2B-Lite 
