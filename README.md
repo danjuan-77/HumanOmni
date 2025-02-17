@@ -107,10 +107,10 @@ Action and Pose Understanding:
 ## 📺 视频演示
 
 ### 中文演示
-<video src="https://humanmllm.github.io/HumanOmni/demos/chinese_video.mp4" controls width="100%"></video>
+<video src="https://humanmllm.github.io/HumanOmni/docs/chinese_video.mp4" controls width="100%"></video>
 
 ### English Demo
-<video src="https://humanmllm.github.io/HumanOmni/demos/english_video.mp4" controls width="100%"></video>
+<video src="https://humanmllm.github.io/HumanOmni/docs/chinese_video.mp4" controls width="100%"></video>
 
 ## Environment Setup
 
