@@ -28,12 +28,27 @@
 Here are some performance benchmarks of HumanOmni across various tasks:
 
 <div align="center">
-  <img src="figures/result-omotion.png" width="400"/>
-  <img src="figures/result-dfec.png" width="400"/>
-  <img src="figures/result-mvbench.png" width="400"/>
+  <figure>
+    <img src="figures/result-emotion.png" alt="Emotion Understanding Task Results" width="400"/>
+    <figcaption>Fig 1: Performance on the emotion understanding task.</figcaption>
+  </figure>
+  <figure>
+    <img src="figures/result-dfec.png" alt="Dynamic Facial Expression Caption Task Results" width="400"/>
+    <figcaption>Fig 2: Performance on the dynamic facial expression caption task.</figcaption>
+  </figure>
+  <figure>
+    <img src="figures/result-mvbench.png" alt="Movement and Pose Understanding Task Results" width="400"/>
+    <figcaption>Fig 3: Performance on the action and pose understanding task.</figcaption>
+  </figure>
 </div>
 
 ## Environment Setup
-conda create -n humanomni python=3.10
-conda activate humanomni
-pip install -r requirements.txt
+
+To set up the recommended environment for HumanOmni, follow these instructions:
+
+### Recommended Environment
+- **Python**: >=3.10
+- **CUDA**: >=12.1
+- **PyTorch**: >=2.2 (with CUDA support)
+- **Transformers**: >=4.45
+- **Accelerate**: >=0.30.1
