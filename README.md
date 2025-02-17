@@ -103,14 +103,12 @@ Action and Pose Understanding:
 | InternLM-XComposer-2.5-OL    | 84.5| 81.0| 75.0| 79.5| 60.5| 46.0| 71.1 |
 | **HumanOmni**                    | 70.0| 78.0| 92.5| 80.5| 65.5| 49.0| **72.6** |
 
-## Demo
-## 📺 视频演示
+## 📺  Demo
+### 中文对话
+https://humanmllm.github.io/HumanOmni/chinese_video.mp4
 
-### 中文演示
-<video src="https://humanmllm.github.io/HumanOmni/docs/chinese_video.mp4" controls width="100%"></video>
-
-### English Demo
-<video src="https://humanmllm.github.io/HumanOmni/docs/chinese_video.mp4" controls width="100%"></video>
+### English Chat
+https://humanmllm.github.io/HumanOmni/english_video.mp4
 
 ## Environment Setup
 
