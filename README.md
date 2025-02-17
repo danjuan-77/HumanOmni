@@ -105,7 +105,7 @@
 
 ## 📺  Demo
 ### 中文对话
-https://humanmllm.github.io/HumanOmni/chinese_video.mp4
+
 
 ### English Chat
 https://humanmllm.github.io/HumanOmni/english_video.mp4
