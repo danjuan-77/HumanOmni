@@ -234,6 +234,11 @@ python inference.py --modal audio \
   --instruct "Describe this video."
 ```
 
+## Related Works
+- [LLAVA-Octopus](https://arxiv.org/abs/2501.05067)
+- [Omni-Emotion](https://arxiv.org/abs/2501.09502)
+- [Qwen2.5](https://github.com/QwenLM/Qwen2.5)
+
 ## Citation
 If you find our work helpful, feel free to give us a cite.
 ```
