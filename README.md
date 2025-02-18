@@ -104,18 +104,49 @@
 | **HumanOmni**                    | 70.0| 78.0| 92.5| 80.5| 65.5| 49.0| **72.6** |
 
 ## 📺  Demo
-### 中文对话
-
-
-### English Chat
-[https://humanmllm.github.io/HumanOmni/english_video.mp4](https://github.com/user-attachments/assets/35bea4cb-9fee-4c42-b05e-708a2ee260f4)
+https://github.com/user-attachments/assets/ecf07e98-f448-4cb6-a124-6e2a2885e581
 ```
-User: What's the major expression of the woman in the video?
-HumanOmni:The major expression of the woman in the video is frown.
+User:What's the major emotion?
+HumanOmni:angry.
+
+User:What's the major facial expression?
+HumanOmni:frown.
+
+User:Desribe the woman.
+HumanOmni:The woman has long brown hair and is wearing a pink top with a dark cardigan.
+
+User:Please describe the major action in detail.
+HumanOmni:The woman is frowning and shaking her head, indicating that she is angry. She is also gesturing with her hands as if she is explaining something or emphasizing a point.
+
 User:What did the woman say?
-HumanOmni:The woman says "Dogs are sitting by the door".
-User:Describe the woman in the video.
-HumanOmni:The woman in the video has brown hair tied back, a black top, and a small mole on her cheek.
+HumanOmni:The woman said "Of course we object! I object, Steve!"
+```
+
+https://github.com/user-attachments/assets/0f0d9c5c-6e1d-473f-8c6b-819ebdc8aae8
+```
+User:What's the major emotion?
+HumanOmni:happy.
+
+User:What's the major facial expression?
+HumanOmni:smile.
+
+User:Desribe the woman in detail.
+HumanOmni:The woman in the video has blonde hair, is wearing a black top, and is smiling.
+
+User:What did the woman say?
+HumanOmni:The woman said "Dogs are sitting by the door."
+```
+
+[https://humanmllm.github.io/HumanOmni/chinese_video.mp4](https://github.com/user-attachments/assets/65b49d37-7213-452d-a492-cfddbbc8b41d)
+```
+User:描述一下视频中男子的外貌穿着.
+HumanOmni:视频中的男性有短的黑发，配戴圆框眼镜。他穿了一件棕色的毛大衣，内里是白色的.
+
+User:视频中男子说了什么内容？
+HumanOmni:男子说他穿什么颜色的衣服，现在处于什么环境，今天的天气怎么样.
+
+User:视频中男子有什么情绪吗？
+HumanOmni:没有情绪。
 ```
 
 ## Environment Setup
