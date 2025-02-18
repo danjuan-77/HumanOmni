@@ -235,8 +235,8 @@ python inference.py --modal audio \
 ```
 
 ## Related Works
-- [LLAVA-Octopus](https://arxiv.org/abs/2501.05067)
-- [Omni-Emotion](https://arxiv.org/abs/2501.09502)
+- [LLaVA-Octopus: Unlocking Instruction-Driven Adaptive Projector Fusion for Video Understanding](https://arxiv.org/abs/2501.05067)
+- [Omni-Emotion: Extending Video MLLM with Detailed Face and Audio Modeling for Multimodal Emotion Analysis](https://arxiv.org/abs/2501.09502)
 - [Qwen2.5](https://github.com/QwenLM/Qwen2.5)
 
 ## Citation
