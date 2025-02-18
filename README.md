@@ -242,13 +242,10 @@ python inference.py --modal audio \
 ## Citation
 If you find our work helpful, feel free to give us a cite.
 ```
-@misc{zhao2025humanomnilargevisionspeechlanguage,
-      title={HumanOmni: A Large Vision-Speech Language Model for Human-Centric Video Understanding}, 
-      author={Jiaxing Zhao and Qize Yang and Yixing Peng and Detao Bai and Shimin Yao and Boyuan Sun and Xiang Chen and Shenghao Fu and Weixuan chen and Xihan Wei and Liefeng Bo},
-      year={2025},
-      eprint={2501.15111},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2501.15111}, 
+@article{zhao2025humanomni,
+  title={HumanOmni: A Large Vision-Speech Language Model for Human-Centric Video Understanding},
+  author={Zhao, Jiaxing and Yang, Qize and Peng, Yixing and Bai, Detao and Yao, Shimin and Sun, Boyuan and Chen, Xiang and Fu, Shenghao and Wei, Xihan and Bo, Liefeng and others},
+  journal={arXiv preprint arXiv:2501.15111},
+  year={2025}
 }
 ```
