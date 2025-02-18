@@ -1,6 +1,6 @@
 # HumanOmni: A Large Vision-Speech Language Model for Human-Centric Video Understanding
 
-[![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B)
+[![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/iic/HumanOmni-7B)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)
 [![arXiv](https://img.shields.io/badge/arXiv-2405.15111-red)](https://arxiv.org/abs/2501.15111)
 
@@ -20,8 +20,8 @@
 
 | **Model** | **#Total Params** | **Download-Huggingface** | **Download-ModelScope** |
 | :------------: | :------------: | :------------: | :------------: |
-| HumanOmni-Omni | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B) |
-| HumanOmni-Video | 7B | Coming Soon  | Coming Soon |
+| HumanOmni-Omni | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/iic/HumanOmni-7B) |
+| HumanOmni-Video | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B-Video)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/iic/HumanOmni-7B-Video) |
 | HumanOmni-Audio | - | Coming Soon  | Coming Soon |
 | HumanOmni-Omni | 2B | Coming Soon  | Coming Soon |
  
