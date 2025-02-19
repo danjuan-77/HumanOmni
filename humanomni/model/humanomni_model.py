@@ -75,7 +75,7 @@ class HumanOmniQwen2ForCausalLM(Qwen2ForCausalLM,HumanOmniMetaForCausalLM):
         audios: Optional[torch.FloatTensor] = None,
         **kwargs
     ) -> Union[Tuple, CausalLMOutputWithPast]:
-        audios=kwargs.get('audios', None)
+       # audios=kwargs.get('audios', None)
         if inputs_embeds is None:
 
             (

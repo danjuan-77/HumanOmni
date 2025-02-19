@@ -78,7 +78,7 @@ class HumanOmniMetaModel:
             self.mm_projector = build_vision_projector(config)
 
 
-        # 有额外分支，有slowfast，测试时候需要取消这一部分代码的注释。
+        # Comment out this part of the code during training to avoid repeated initialization.
         num_branches = 3
         bert_model = "bert-base-uncased"
         self.bert_model =  BertModel.from_pretrained(bert_model)
@@ -89,6 +89,7 @@ class HumanOmniMetaModel:
         self.bert_gate = nn.Sequential(*modules)
         self.bert_softmax = nn.Softmax(dim=1)
         self.feature_compressor = SFDynamicCompressor(config, self.vision_tower)
+        #####
         
         if hasattr(config, "mm_audio_tower"):
             self.audio_tower = build_audio_tower(config, delay_load=True)
@@ -165,18 +166,18 @@ class HumanOmniMetaModel:
           
             self.mm_projector.load_state_dict(get_w(mm_projector_weights, 'mm_projector'), strict=True)
 
-    # 如果要+slow fast训练并且训练指令驱动的加权分支，取消这一部分代码的注释
-        # self.feature_compressor = SFDynamicCompressor(model_args, vision_tower)
-        # num_branches = 3
-        # bert_model = "bert-base-uncased"
-        # self.bert_model =  BertModel.from_pretrained(bert_model)
-        # self.bert_tokenizer = BertTokenizer.from_pretrained(bert_model)
-        # # self.bert_gate = nn.Linear(self.bert_model.config.hidden_size, num_branches)
-        # modules = [nn.Linear(self.bert_model.config.hidden_size, 3584)]
-        # modules.append(nn.GELU())
-        # modules.append(nn.Linear(3584, num_branches))
-        # self.bert_gate = nn.Sequential(*modules)
-        # self.bert_softmax = nn.Softmax(dim=1)
+   
+        self.feature_compressor = SFDynamicCompressor(model_args, vision_tower)
+        num_branches = 3
+        bert_model = "bert-base-uncased"
+        self.bert_model =  BertModel.from_pretrained(bert_model)
+        self.bert_tokenizer = BertTokenizer.from_pretrained(bert_model)
+        # self.bert_gate = nn.Linear(self.bert_model.config.hidden_size, num_branches)
+        modules = [nn.Linear(self.bert_model.config.hidden_size, 3584)]
+        modules.append(nn.GELU())
+        modules.append(nn.Linear(3584, num_branches))
+        self.bert_gate = nn.Sequential(*modules)
+        self.bert_softmax = nn.Softmax(dim=1)
 
 
     def initialize_audio_modules(self, model_args, fsdp=None):
@@ -261,6 +262,7 @@ class HumanOmniMetaForCausalLM(ABC):
         batch_size = len(data_batch)
         split_sizes = [image.shape[0] for image in data_batch]
         frames = torch.cat([image for image in data_batch], dim=0)
+        # ddd
         frames_features = self.get_model().get_vision_tower()(frames)
         video_features = einops.rearrange(frames_features, '(b t) n h -> b t n h', b = batch_size)
         body_features = video_features       
@@ -311,6 +313,7 @@ class HumanOmniMetaForCausalLM(ABC):
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, attention_mask, past_key_values, labels, images, prompts=None,audios=None
     ):
+
         if audios is not None:
             if len(audios.shape) == 4 and audios.shape[0] == 1:
                 audios = audios.squeeze(0)  # 移除第一维

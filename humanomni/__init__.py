@@ -17,7 +17,6 @@ def model_init(model_path=None, **kwargs):
     model_name = get_model_name_from_path(model_path)
 
     tokenizer, model, processor, context_len, audio_processor = load_pretrained_model(model_path, None, model_name, **kwargs)
-    print(processor)
 
     if tokenizer.pad_token is None and tokenizer.unk_token is not None:
         tokenizer.pad_token = tokenizer.unk_token
@@ -75,7 +74,7 @@ def mm_infer(image_or_video, instruct, model, tokenizer, audio=None, modal='vide
     # 1. vision preprocess (load & transform image or video).
 
     if modal == 'text' or modal == 'audio':
-        tensor = [(torch.zeros(16, 3, 384, 384).cuda().half(), "video")]
+        tensor = [(torch.zeros(32, 3, 384, 384).cuda().half(), "video")]
     else:
         if "video" in modal:
             vi_modal = "video"
@@ -139,20 +138,6 @@ def mm_infer(image_or_video, instruct, model, tokenizer, audio=None, modal='vide
     top_p = kwargs.get('top_p', 0.9)
     max_new_tokens = kwargs.get('max_new_tokens', 2048)
 
-    # import ipdb; ipdb.set_trace()
-    print("\n=== Input Parameters ===")
-    print("Input IDs:")
-    print(input_ids)  # 完整的input_ids内容
-    print("\nAttention Masks:")
-    print(attention_masks)  # 完整的attention_mask内容
-    if tensor is not None:
-        print("\nImage Tensor:")
-        print(tensor)  # 完整的图像张量内容
-    print("\nGeneration Config:")
-    print(f"do_sample: {do_sample}")
-    print(f"temperature: {temperature}")
-    print(f"top_p: {top_p}")
-    print(f"prompts: {question_prompt}")
 
     with torch.inference_mode():
         output_ids = model.generate(
