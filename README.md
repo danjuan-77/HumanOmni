@@ -14,18 +14,36 @@
 2) **50K video clips with more than 100K manually annotated instrcutions**: We have manually annotated 50K video clips with more than 100K instructions related to emotion recognition, facial description, and speaker-specific speech recognition for visual fine-tuning and cross-modal interaction integration.
 3) **Three human-specific branch**: We use three branches to handle face-related, body-related, and interaction-related scenes separately in HumanOmni. HumanOmni dynamically adjusts its fusion weights based on input instructions, ensuring accurate responses across various scenes.
 4) **Audio-visual synergy**: HumanOmni can simultaneously understand vision and speech, allowing for a more comprehensive understanding of complex scenes.
-   
+
+
+
 ## 📦 Model Download
 <div align="center">
 
-| **Model** | **#Total Params** | **Download-Huggingface** | **Download-ModelScope** |
-| :------------: | :------------: | :------------: | :------------: |
-| HumanOmni-Omni | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/iic/HumanOmni-7B) |
-| HumanOmni-Video | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B-Video)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/iic/HumanOmni-7B-Video) |
-| HumanOmni-Audio | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B-Audio)   | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/iic/HumanOmni-7B-Audio)  |
- 
+| **Model**              | **Stage**                          | **#Params** | **HuggingFace**                                                                 | **ModelScope**                                                          |
+|------------------------|------------------------------------|-------------|---------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| `HumanOmni-Video`      | Visual Capability Construction     | 7B          | [![HF](https://img.shields.io/badge/🤗-Download-yellow)](https://hf.co/StarJiaxing/HumanOmni-7B-Video) | [![MS](https://img.shields.io/badge/ModelScope-Download-blue)](https://modelscope.cn/models/iic/HumanOmni-7B-Video) |
+| `HumanOmni-Audio`      | Auditory Capability Development    | 7B          | [![HF](https://img.shields.io/badge/🤗-Download-yellow)](https://hf.co/StarJiaxing/HumanOmni-7B-Audio)  | [![MS](https://img.shields.io/badge/ModelScope-Download-blue)](https://modelscope.cn/models/iic/HumanOmni-7B-Audio)  |
+| `HumanOmni-Omni`       | Cross-Modal Interaction Integration | 7B          | [![HF](https://img.shields.io/badge/🤗-Download-yellow)](https://hf.co/StarJiaxing/HumanOmni-7B)         | [![MS](https://img.shields.io/badge/ModelScope-Download-blue)](https://modelscope.cn/models/iic/HumanOmni-7B)         |
+
 </div>
 
+Our training pipeline consists of three progressive stages to establish multimodal understanding capabilities:
+
+📹 Visual Capability Construction
+
+- Model: HumanOmni-Video
+- Objective: Learn spatio-temporal feature representations to analyze human actions and scene dynamics in videos.
+  
+🎧 Auditory Capability Development
+
+- Model: HumanOmni-Audio
+- Objective: Develop robust speech comprehension and audio interpretation through large-scale acoustic modeling.
+
+🌐 Cross-Modal Interaction Integration
+
+- Model: HumanOmni-Omni (also referred to as HumanOmni)
+- Objective: Enable synergistic vision-audio reasoning by fine-tuning parameters from both HumanOmni-Video and HumanOmni-Audio.
 
 
 ## 🏆 Performance
