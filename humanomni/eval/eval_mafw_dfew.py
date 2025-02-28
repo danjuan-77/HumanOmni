@@ -18,7 +18,7 @@ import numpy as np
 from humanomni import model_init, mm_infer
 
 ds_collections = {
-    'emotion': {'path': ''}
+    'emotion': {'path': 'Your Json Path'}
 }
 
 
