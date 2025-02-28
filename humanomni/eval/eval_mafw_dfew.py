@@ -164,6 +164,7 @@ if __name__ == '__main__':
             audio=audio_tensor,
             modal='video_audio',
             do_sample=False,
+            question=input[0],
         )
         print(inputs[0], video_path[0], output, gt[0])
         gts.extend(gt)
