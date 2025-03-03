@@ -18,9 +18,12 @@ import numpy as np
 from humanomni import model_init, mm_infer
 
 ds_collections = {
-    'emotion': {'path': 'Your Json Path'}
+    'emotion': {'path': '/mnt/data/qize.yqz/datasets/human/annos/1021_val_MAFW_DFEW_it_without_tag.json'}
 }
 
+from transformers import BertModel, BertTokenizer
+bert_model = "bert-base-uncased"
+bert_tokenizer = BertTokenizer.from_pretrained(bert_model)
 
 def weighted_average_recall(y_true, y_pred):
     unique_classes = np.unique(y_true)
@@ -164,7 +167,8 @@ if __name__ == '__main__':
             audio=audio_tensor,
             modal='video_audio',
             do_sample=False,
-            question=input[0],
+            question=inputs[0],
+            bert_tokeni=bert_tokenizer
         )
         print(inputs[0], video_path[0], output, gt[0])
         gts.extend(gt)
@@ -230,7 +234,7 @@ if __name__ == '__main__':
 """
 
 python -m torch.distributed.launch --use_env --master_port=29501 --nproc_per_node 8 --nnodes 1 \
-    videollama2/eval/eval_mafw_dfew.py \
-    --checkpoint work_dirs/videollama2qwen2_siglip/finetune_all_in_one_withaudio_mafw_dfew_with_113k/ \
+    humanomni/eval/eval_mafw_dfew.py \
+    --checkpoint HumanOmni_7B/ \
     --dataset  emotion
 """
