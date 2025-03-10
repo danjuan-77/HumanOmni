@@ -8,7 +8,7 @@
   <img src="figures/arch.png" width="800"/>
 </div>
 
-## News [![News](https://img.shields.io/badge/News-Updates-blue)](#news) 
+## [![News](https://img.shields.io/badge/News-Update-blue)](#news)News 
 1) Building upon HumanOmni, we are the **first to combine RLVR (Reinforcement Learning for Vision and Reasoning) with an Omni model**, introducing [R1-Omni](https://github.com/HumanMLLM/R1-Omni), a reasoning-based large multimodal model.
 
 
