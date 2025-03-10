@@ -8,6 +8,10 @@
   <img src="figures/arch.png" width="800"/>
 </div>
 
+## News [![News](https://img.shields.io/badge/News-Updates-blue)](#news) 
+1) Building upon HumanOmni, we are the **first to combine RLVR (Reinforcement Learning for Vision and Reasoning) with an Omni model**, introducing [R1-Omni](https://github.com/HumanMLLM/R1-Omni), a reasoning-based large multimodal model.
+
+
 ## 📖 Introduction
 **HumanOmni** is the industry’s first human-centric Omni-multimodal large language model for comprehensive understanding in human-centric scenes.
 1) **2.4M human-centric video clips with over 14M double-check instructions**: We have constructed a dataset containing over 2.4M human-centric video clips, providing rich and detailed information about individuals. We provide over 14M instruction data for visual pretraining.
