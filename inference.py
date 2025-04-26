@@ -31,7 +31,6 @@ def main():
     # 处理视频输入
     if args.modal == "image":
         image_tensor = processor['image'](args.image_path)
-        ipdb.set_trace()
     else:
         video_tensor = processor['video'](args.video_path)
         
