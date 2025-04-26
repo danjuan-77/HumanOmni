@@ -29,10 +29,10 @@ def main():
     model, processor, tokenizer = model_init(args.model_path)
 
     # 处理视频输入
-    if args.modal == "video" or args.modal == "video_audio":
-        video_tensor = processor['video'](args.video_path)
-    else:
+    if args.modal == "image":
         image_tensor = processor['image'](args.image_path)
+    else:
+        video_tensor = processor['video'](args.video_path)
         
         
     # 根据modal类型决定是否处理音频
@@ -42,10 +42,10 @@ def main():
         audio = None
 
     # 执行推理
-    if args.modal == "video" or args.modal == "video_audio":
-        output = mm_infer(video_tensor, args.instruct, model=model, tokenizer=tokenizer, modal=args.modal, question=args.instruct, bert_tokeni=bert_tokenizer, do_sample=False, audio=audio)
-    else:
+    if args.modal == "image":
         output = mm_infer(image_tensor, args.instruct, model=model, tokenizer=tokenizer, modal=args.modal, question=args.instruct, bert_tokeni=bert_tokenizer, do_sample=False, audio=audio)
+    else:
+        output = mm_infer(video_tensor, args.instruct, model=model, tokenizer=tokenizer, modal=args.modal, question=args.instruct, bert_tokeni=bert_tokenizer, do_sample=False, audio=audio)
         
     print(output)
 
