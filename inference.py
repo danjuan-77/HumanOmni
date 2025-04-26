@@ -13,6 +13,7 @@ def main():
     parser.add_argument('--modal', type=str, default='video_audio', help='Modal type (video or video_audio)')
     parser.add_argument('--model_path', type=str, required=True, help='Path to the model')
     parser.add_argument('--video_path', type=str, required=True, help='Path to the video file')
+    parser.add_argument('--image_path', type=str, help='Path to the video file')
     parser.add_argument('--instruct', type=str, required=True, help='Instruction for the model')
 
     args = parser.parse_args()
@@ -28,8 +29,12 @@ def main():
     model, processor, tokenizer = model_init(args.model_path)
 
     # 处理视频输入
-    video_tensor = processor['video'](args.video_path)
-    
+    if args.modal == "video" or args.modal == "video_audio":
+        video_tensor = processor['video'](args.video_path)
+    else:
+        image_tensor = processor['image'](args.image_path)
+        
+        
     # 根据modal类型决定是否处理音频
     if args.modal == 'video_audio' or args.modal == 'audio':
         audio = processor['audio'](args.video_path)[0]
@@ -37,7 +42,11 @@ def main():
         audio = None
 
     # 执行推理
-    output = mm_infer(video_tensor, args.instruct, model=model, tokenizer=tokenizer, modal=args.modal, question=args.instruct, bert_tokeni=bert_tokenizer, do_sample=False, audio=audio)
+    if args.modal == "video" or args.modal == "video_audio":
+        output = mm_infer(video_tensor, args.instruct, model=model, tokenizer=tokenizer, modal=args.modal, question=args.instruct, bert_tokeni=bert_tokenizer, do_sample=False, audio=audio)
+    else:
+        output = mm_infer(image_tensor, args.instruct, model=model, tokenizer=tokenizer, modal=args.modal, question=args.instruct, bert_tokeni=bert_tokenizer, do_sample=False, audio=audio)
+        
     print(output)
 
 if __name__ == "__main__":
