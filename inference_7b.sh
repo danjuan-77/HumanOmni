@@ -21,5 +21,5 @@ python inference.py --modal audio \
 # image 
 python inference.py --modal image \
   --model_path /share/nlp/tuwenming/models/StarJiaxing/HumanOmni-7B \
-  --video_path /share/nlp/tuwenming/projects/ola/data/vision_qa_image.jpg \
+  --image_path /share/nlp/tuwenming/projects/ola/data/vision_qa_image.jpg \
   --instruct "Describe this picture."
