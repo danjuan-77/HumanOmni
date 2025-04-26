@@ -92,8 +92,7 @@ def mm_infer(image_or_video, instruct, model, tokenizer, audio=None, modal='vide
             processed_data = image_or_video.half().cuda()
         tensor = [(processed_data, vi_modal)]
 
-    import ipdb;
-    ipdb.set_trace()
+
     if audio is not None:
         audio = audio.half().cuda()
 
