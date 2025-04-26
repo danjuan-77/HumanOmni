@@ -18,8 +18,8 @@ python inference.py --modal audio \
   --video_path ./data/test.mp4 \
   --instruct "Describe this video."
 
-# image 
-python inference.py --modal image \
-  --model_path /share/nlp/tuwenming/models/StarJiaxing/HumanOmni-0.5B \
-  --image_path /share/nlp/tuwenming/projects/Ola/data/vision_qa_image.jpg \
-  --instruct "Describe this picture."
+# # image 
+# python inference.py --modal image \
+#   --model_path /share/nlp/tuwenming/models/StarJiaxing/HumanOmni-0.5B \
+#   --image_path /share/nlp/tuwenming/projects/Ola/data/vision_qa_image.jpg \
+#   --instruct "Describe this picture."
