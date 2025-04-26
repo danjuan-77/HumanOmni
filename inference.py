@@ -3,7 +3,7 @@ import argparse
 from humanomni import model_init, mm_infer
 from humanomni.utils import disable_torch_init
 from transformers import BertTokenizer
-
+import ipdb
 # 设置环境变量
 os.environ['TRANSFORMERS_OFFLINE'] = '1'
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
@@ -30,7 +30,8 @@ def main():
 
     # 处理视频输入
     if args.modal == "image":
-        image_tensor = processor['image'](args.image_path).unsqueeze(0)
+        image_tensor = processor['image'](args.image_path)
+        ipdb.set_trace()
     else:
         video_tensor = processor['video'](args.video_path)
         
