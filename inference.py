@@ -30,7 +30,7 @@ def main():
 
     # 处理视频输入
     if args.modal == "image":
-        image_tensor = processor['image'](args.image_path)
+        image_tensor = processor['image'](args.image_path).unsqueeze(0)
     else:
         video_tensor = processor['video'](args.video_path)
         
