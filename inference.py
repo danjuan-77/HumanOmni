@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description="HumanOmni Inference Script")
     parser.add_argument('--modal', type=str, default='video_audio', help='Modal type (video or video_audio)')
     parser.add_argument('--model_path', type=str, required=True, help='Path to the model')
-    parser.add_argument('--video_path', type=str, required=True, help='Path to the video file')
+    parser.add_argument('--video_path', type=str, help='Path to the video file')
     parser.add_argument('--image_path', type=str, help='Path to the video file')
     parser.add_argument('--instruct', type=str, required=True, help='Instruction for the model')
 
