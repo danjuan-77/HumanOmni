@@ -276,6 +276,13 @@ def main():
         required=True,
         help="Path to the task folder containing data.json and media files",
     )
+    
+    parser.add_argument(
+        "--modal",
+        type=str,
+        required=True,
+        help="Path to the task folder containing data.json and media files",
+    )
     args = parser.parse_args()
 
     # 初始化BERT分词器
@@ -344,8 +351,11 @@ def main():
                 audio_path = concat_audio(audio_list) if len(audio_list) > 1 else audio_list[0]
                 video_path = audio_to_video(audio_path, fps=1)
                 use_audio = True
-                modal = 'video'
-                
+                if model_name == "HumanOmni-0.5B":
+                    modal = 'video'
+                else:
+                    modal = 'audio'
+                    
 
             elif image_list and not audio_list and not video:
                 # Case 2: 仅图像 -> 无声视频 (时长5s)
