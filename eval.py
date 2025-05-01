@@ -276,13 +276,7 @@ def main():
         required=True,
         help="Path to the task folder containing data.json and media files",
     )
-    
-    parser.add_argument(
-        "--modal",
-        type=str,
-        required=True,
-        help="Path to the task folder containing data.json and media files",
-    )
+
     args = parser.parse_args()
 
     # 初始化BERT分词器
