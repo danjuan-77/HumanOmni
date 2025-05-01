@@ -344,7 +344,7 @@ def main():
                 audio_path = concat_audio(audio_list) if len(audio_list) > 1 else audio_list[0]
                 video_path = audio_to_video(audio_path, fps=1)
                 use_audio = True
-                modal = 'audio'
+                modal = 'video'
                 
 
             elif image_list and not audio_list and not video:
